@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v2
         
       - name: Add public IP to AWS security group for Web App
-        uses: panku9/aws-security-group-add-ip-action@main
+       # uses: panku9/aws-security-group-add-ip-action@main
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
