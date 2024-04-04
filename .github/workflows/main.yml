@@ -29,6 +29,6 @@ jobs:
           
       - name: Deploy to S3
         run: |
-          S3_BUCKET="your-s3-bucket-name"
+          S3_BUCKET="${{ github.repository }}"
           aws s3 sync build/ "s3://$S3_BUCKET"
 
